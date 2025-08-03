@@ -23,7 +23,10 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
+header {
+  background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
 .skills-slider {
   display: flex;
   gap: 42px;
@@ -241,10 +244,10 @@
   <!-- Contact Section -->
   <section id="contact" class="max-w-4xl mx-auto py-16 px-4">
     <h2 class="text-5xl font-semibold mb-6 text-center">Contact Me</h2>
-    <form class="space-y-4 max-w-md mx-auto">
-      <input type="text" placeholder="Your Name" class="w-full  p-2 border rounded" required>
-      <input type="email" placeholder="Your Email" class="w-full p-2 border rounded" required>
-      <textarea placeholder="Your Message" class="w-full p-2 border rounded" rows="5" required></textarea>
+    <form action="https://formspree.io/f/xzzvajey" method="POST" class="space-y-4 max-w-md mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full  p-2 border rounded" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required>
+      <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded" rows="5" required></textarea>
       <button type="submit" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 transition">Send Message</button>
     </form>
   </section>
